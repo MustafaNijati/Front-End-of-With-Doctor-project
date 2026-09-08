@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام مریض | همراه داکتر</title>
+    <link rel="stylesheet" href="patiant_register_style.css">
+
+
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("nav-menu");
+        menu.classList.toggle("active");
+    }
+</script>
+</head>
+
+<body>
+    <!-- 
+         HEADER
+    -->
+    <header>
+
+        <div class="logo-area">
+            <img
+                src="/logo/ChatGPT Image Aug 7, 2026, 09_49_14 PM.png"
+                alt="لوگوی همراه داکتر"
+                class="logo"
+            >
+            <h2>
+                همراه داکتر
+            </h2>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+        <nav id="nav-menu">
+            <a href="/Front_web/index.html">
+                صفحه عمومی
+            </a>
+            <a href="#services">
+                خدمات
+            </a>
+            <a href="#">
+                شبکه های اجتماعی
+            </a>
+            <a href="#">
+                درباره ما
+            </a>
+        </nav>
+
+    </header>
+    <!-- 
+         MAIN
+    -->
+    <main>
+        <div class="form-container">
+            <!-- 
+                SIDE
+            -->
+            <div class="side-section">
+                <h1>
+                    ثبت نام مریض
+                </h1>
+                <p>
+                    برای استفاده از خدمات همراه داکتر،
+                    لطفاً معلومات شخصی و طبی خود را
+                    با دقت وارد کنید.
+                </p>
+                <img
+                    src="/pictures/ChatGPT Image Aug 5, 2026, 10_23_01 PM.png"
+                    alt="مریض"
+                    class="patient-image"
+                >
+                <div class="important-note">
+                    <h3>
+                        نکته مهم
+                    </h3>
+                    <p>
+                        معلومات طبی شما خصوصی است.
+                        از وارد کردن معلومات نادرست خودداری کنید
+                        و اسناد طبی را فقط در صورت نیاز آپلود نمایید.
+                    </p>
+                </div>
+
+            </div>
+            <!-- 
+                 FORM
+            -->
+            <div class="form-section">
+
+                <form
+                    action="#"
+                    method="post"
+                    enctype="multipart/form-data"
+                >
+                <!-- 
+                Personal Information 
+                -->
+                    <h2 class="form-title">
+                        معلومات شخصی
+                    </h2>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label>
+                                نام
+                            </label>
+                            <input
+                                type="text"
+                                name="patient_name"
+                                placeholder="نام خود را وارد کنید"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                نام پدر
+                            </label>
+                            <input
+                                type="text"
+                                name="father_name"
+                                placeholder="نام پدر خود را وارد کنید"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                کشور
+                            </label>
+                            <select
+                                name="country"
+                                required
+                            >
+                                <option value="">
+                                    کشور خود را انتخاب کنید
+                                </option>
+                                <option>
+                                    افغانستان
+                                </option>
+                                <option>
+                                    ایران
+                                </option>
+                                <option>
+                                    پاکستان
+                                </option>
+                                <option>
+                                    هند
+                                </option>
+                                <option>
+                                    ترکیه
+                                </option>
+                                <option>
+                                    سایر
+                                </option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                ولایت
+                            </label>
+                            <select
+                                name="province"
+                                required
+                            >
+                                <option value="">
+                                    ولایت خود را انتخاب کنید
+                                </option>
+                                <option>
+                                    کابل
+                                </option>
+                                <option>
+                                    هرات
+                                </option>
+                                <option>
+                                    بلخ
+                                </option>
+                                <option>
+                                    قندهار
+                                </option>
+                                <option>
+                                    ننگرهار
+                                </option>
+                                <option>
+                                    غور
+                                </option>
+                                <option>
+                                    غزنی
+                                </option>
+                                <option>
+                                    بامیان
+                                </option>
+                                <option>
+                                    دایکندی
+                                </option>
+                                <option>
+                                    میدان وردگ
+                                </option>
+                                <option>
+                                    سمنگان
+                                </option>
+                                <option>
+                                    سرپل
+                                </option>
+                                <option>
+                                    جوزجان
+                                </option>
+                                <option>
+                                    پروان
+                                </option>
+                                <option>
+                                    پنجشیر
+                                </option>
+                                <option>
+                                    کاپیسا
+                                </option>
+                                <option>
+                                    کندز
+                                </option>
+                                <option>
+                                    ننگرهار
+                                </option>
+                                <option>
+                                    لوگر
+                                </option>
+                                <option>
+                                    نورستان
+                                </option>
+                                <option>
+                                    نیمروز
+                                </option>
+                                <option>
+                                    هلمند
+                                </option>
+                                <option>
+                                    اوروزگان
+                                </option>
+                                <option>
+                                    بدخشان
+                                </option>
+                                <option>
+                                    بغلان
+                                </option>
+                                <option>
+                                    بادغیس
+                                </option>
+                                <option>
+                                    فراه
+                                </option>
+                                <option>
+                                    زابل
+                                </option>
+                                <option>
+                                    پکتیا
+                                </option>
+                                <option>
+                                    پکتیکا
+                                </option>
+                                <option>
+                                    خوست
+                                </option>
+                                <option>
+                                    لغمان
+                                </option>
+                                <option>
+                                    تخار
+                                </option>
+                                <option>
+                                    فاریاب
+                                </option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                منطقه / ولسوالی
+                            </label>
+                            <input
+                                type="text"
+                                name="district"
+                                placeholder="منطقه یا ولسوالی"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                شماره تماس
+                            </label>
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="مثلاً 07XXXXXXXX"
+                                required
+                            >
+                        </div>
+
+                    </div>
+                    <!-- Medical Information -->
+                    <h2 class="form-section-title">
+                        معلومات مریضی
+                    </h2>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>
+                                نوعیت مریضی
+                            </label>
+
+                            <select
+                                name="illness_type"
+                                required
+                            >
+                                <option value="">
+                                    نوعیت مریضی را انتخاب کنید
+                                </option>
+                                <option>
+                                    قلبی
+                                </option>
+                                <option>
+                                    تنفسی
+                                </option>
+                                <option>
+                                    گوارشی
+                                </option>
+                                <option>
+                                    عصبی
+                                </option>
+                                <option>
+                                    استخوانی
+                                </option>
+                                <option>
+                                    پوستی
+                                </option>
+                                <option>
+                                    چشم
+                                </option>
+                                <option>
+                                    گوش و گلو
+                                </option>
+                                <option>
+                                    سایر
+                                </option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+                                نام شفاخانه
+                            </label>
+
+                            <input
+                                type="text"
+                                name="hospital"
+                                placeholder="نام شفاخانه"
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+                                نام داکتر قبلی
+                            </label>
+
+                            <input
+                                type="text"
+                                name="previous_doctor"
+                                placeholder="در صورت داشتن داکتر قبلی"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>
+                            توضیحات درباره مریضی
+                        </label>
+
+                        <textarea
+                            name="illness_description"
+                            placeholder="علایم یا معلومات مربوط به مریضی خود را بنویسید..."
+                        ></textarea>
+
+                    </div>
+                    <!-- Medical Documents -->
+                    <h2 class="form-section-title">
+                        اسناد طبی
+                    </h2>
+
+                    <div class="form-grid">
+
+                        <div class="upload-box">
+
+                            <span class="upload-text">
+                                آپلود نسخه داکتر
+                            </span>
+
+                            <input
+                                type="file"
+                                name="prescription"
+                                accept=".jpg,.jpeg,.png,.pdf"
+                            >
+
+                        </div>
+
+                        <div class="upload-box">
+
+                            <span class="upload-text">
+                                نتیجه آزمایش / معاینه
+                            </span>
+
+                            <input
+                                type="file"
+                                name="medical_result"
+                                accept=".jpg,.jpeg,.png,.pdf"
+                            >
+
+                        </div>
+
+                        <div class="upload-box">
+
+                            <span class="upload-text">
+                                سایر اسناد طبی
+                            </span>
+
+                            <input
+                                type="file"
+                                name="medical_documents"
+                                accept=".jpg,.jpeg,.png,.pdf"
+                                multiple
+                            >
+
+                        </div>
+
+                    </div>
+                    <!-- Hospital Information -->
+                    <h2 class="form-section-title">
+                        معلومات اسناد طبی
+                    </h2>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>
+                                نتیجه از کدام شفاخانه است؟
+                            </label>
+
+                            <input
+                                type="text"
+                                name="result_hospital"
+                                placeholder="نام شفاخانه"
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+                                نام داکتر صادرکننده نسخه
+                            </label>
+
+                            <input
+                                type="text"
+                                name="prescription_doctor"
+                                placeholder="نام داکتر"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                تاریخ نسخه / نتیجه
+                            </label>
+
+                            <input
+                                type="date"
+                                name="medical_date"
+                            >
+
+                        </div>
+
+                    </div>
+                    <!-- Agreement -->
+                    <div class="agreement">
+
+                        <input
+                            type="checkbox"
+                            id="agreement"
+                            required
+                        >
+
+                        <label for="agreement">
+
+                            تأیید می‌کنم که معلومات وارد شده
+                            صحیح است و با ثبت این معلومات،
+                            شرایط استفاده از خدمات همراه داکتر
+                            را می‌پذیرم.
+
+                            <span class="required">*</span>
+
+                        </label>
+
+                    </div>
+                    <!-- 
+                        Buttons 
+                    -->
+                    <div class="buttons">
+
+                        <button
+                            type="submit"
+                            class="submit-btn"
+                        >
+                            ثبت نام مریض
+                        </button>
+                        <button
+                            type="reset"
+                            class="reset-btn"
+                        >
+                            پاک کردن
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+    <!-- 
+         FOOTER
+    -->
+    <footer>
+        <p>
+            © 2026 همراه داکتر | تمام حقوق محفوظ است
+        </p>
+    </footer>
+
+</body>
+
+</html>
