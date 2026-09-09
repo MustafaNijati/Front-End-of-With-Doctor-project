@@ -24,177 +24,86 @@
         <div class="logo-area">
             <img
                 src="/logo/ChatGPT Image Aug 7, 2026, 09_49_14 PM.png"
-                alt="لوگوی همراه داکتر"
-                class="logo"
+                alt="لوگوی همراه داکتر" class="logo"
             >
-            <h2>
-                همراه داکتر
-            </h2>
+            <h2> همراه داکتر</h2>
         </div>
         <button class="menu-btn" onclick="toggleMenu()">
             ☰
         </button>
         <nav id="nav-menu">
+            <a href="/Front_web/index.html"> صفحه عمومی</a>
 
-            <a href="/Front_web/index.html">
-                صفحه عمومی
-            </a>
-            <a href="#services">
-                خدمات
-            </a>
-            <a href="#">
-                شبکه های اجتماعی
-            </a>
+            <a href="#services"> خدمات</a>
 
-            <a href="#">
-                درباره ما
-            </a>
+            <a href="#"> شبکه های اجتماعی</a>
 
+            <a href="#">درباره ما</a>
         </nav>
-
     </header>
-
-
-
     <!-- 
          MAIN
     = -->
-
     <main>
-
-
         <div class="form-container">
-
-
             <!-- 
                  LEFT SIDE
             = -->
-
             <div class="side-section">
-
-
-                <h1>
-                    ثبت نام داکتر
-                </h1>
-
-
+                <h1>ثبت نام داکتر</h1>
                 <p>
                     لطفاً معلومات دقیق خود را وارد کنید.
                     این معلومات برای ایجاد پروفایل حرفه‌ای
                     شما استفاده خواهد شد.
                 </p>
-
-
                 <img
                     src="/pictures/ChatGPT Image Aug 5, 2026, 10_25_46 PM.png"
-                    alt="ثبت نام داکتر"
-                    class="doctor-image"
-                >
-
-
+                    alt="ثبت نام داکتر" class="doctor-image"
+                    >
                 <div class="important-note">
 
-                    <h3>
-                        نکته مهم
-                    </h3>
-
+                    <h3>نکته مهم</h3>
                     <p>
                         معلومات وارد شده باید صحیح و معتبر باشد.
                         پس از بررسی و تأیید معلومات،
                         پروفایل شما در سیستم فعال خواهد شد.
                     </p>
-
                 </div>
-
-
             </div>
-
-
-
             <!-- 
                  FORM
             = -->
-
             <div class="form-section">
 
-
-                <form
-                    action="#"
-                    method="post"
-                    enctype="multipart/form-data"
-                >
-
-
+                <form action="#" method="post" enctype="multipart/form-data">
                     <!-- Personal Information -->
-
-                    <h2 class="form-title">
-                        معلومات شخصی
-                    </h2>
-
+                    <h2 class="form-title">معلومات شخصی </h2>
 
                     <div class="form-grid">
-
-
                         <div class="form-group">
+                            <label> نام داکتر</label>
 
-                            <label>
-                                نام داکتر
-                                <span class="required">*</span>
-                            </label>
-
-                            <input
-                                type="text"
-                                name="doctor_name"
-                                placeholder="نام خود را وارد کنید"
-                                required
-                            >
-
+                            <input type="text" name="doctor_name" placeholder="نام خود را وارد کنید" required>
                         </div>
-
-
                         <div class="form-group">
-
                             <label>
                                 نام پدر
-                                <span class="required">*</span>
                             </label>
-
-                            <input
-                                type="text"
-                                name="father_name"
-                                placeholder="نام پدر خود را وارد کنید"
-                                required
-                            >
-
+                            <input type="text" name="father_name" placeholder="نام پدر خود را وارد کنید" required>
                         </div>
-
-
                         <div class="form-group">
-
                             <label>
                                 نام پدرکلان
                             </label>
-
-                            <input
-                                type="text"
-                                name="grandfather_name"
-                                placeholder="نام پدرکلان خود را وارد کنید"
-                            >
-
+                            <input type="text" name="grandfather_name" placeholder="نام پدرکلان خود را وارد کنید">
                         </div>
-
-
                         <div class="form-group">
 
                             <label>
                                 رشته تحصیلی
-                                <span class="required">*</span>
                             </label>
 
-                            <select
-                                name="specialty"
-                                required
-                            >
+                            <select name="specialty" required>
 
                                 <option value="">
                                     رشته خود را انتخاب کنید
@@ -215,11 +124,9 @@
                                 <option>
                                     قلب
                                 </option>
-
                                 <option>
                                     اطفال
                                 </option>
-
                                 <option>
                                     نسایی ولادی
                                 </option>
@@ -245,76 +152,46 @@
 
                             <label>
                                 دانشگاه
-                                <span class="required">*</span>
                             </label>
 
-                            <input
-                                type="text"
-                                name="university"
-                                placeholder="نام دانشگاه خود را وارد کنید"
-                                required
-                            >
-
+                            <input type="text" name="university" placeholder="نام دانشگاه خود را وارد کنید" required>
                         </div>
-
-
                         <div class="form-group">
-
                             <label>
                                 کشور تحصیل
-                                <span class="required">*</span>
                             </label>
-
-                            <select
-                                name="study_country"
-                                required
-                            >
-
+                            <select name="study_country" required>
                                 <option value="">
                                     کشور تحصیل خود را انتخاب کنید
                                 </option>
-
                                 <option>
                                     افغانستان
                                 </option>
-
                                 <option>
                                     ایران
                                 </option>
-
                                 <option>
                                     پاکستان
                                 </option>
-
                                 <option>
                                     هند
                                 </option>
-
                                 <option>
                                     ترکیه
                                 </option>
-
                                 <option>
                                     سایر
                                 </option>
-
                             </select>
 
                         </div>
-
-
                         <div class="form-group">
 
                             <label>
                                 ولایت تحصیل
-                                <span class="required">*</span>
                             </label>
 
-                            <select
-                                name="study_province"
-                                required
-                            >
-
+                            <select name="study_province" required>
                                 <option value="">
                                     ولایت خود را انتخاب کنید
                                 </option>
@@ -352,267 +229,126 @@
 
                             <label>
                                 مدت تجربه کاری
-                                <span class="required">*</span>
                             </label>
 
-                            <select
-                                name="experience"
-                                required
-                            >
-
+                            <select name="experience" required>
                                 <option value="">
                                     تجربه کاری خود را انتخاب کنید
                                 </option>
-
                                 <option>
                                     کمتر از 1 سال
                                 </option>
-
                                 <option>
                                     1 تا 3 سال
                                 </option>
-
                                 <option>
                                     3 تا 5 سال
                                 </option>
-
                                 <option>
                                     5 تا 10 سال
                                 </option>
-
                                 <option>
                                     بیشتر از 10 سال
                                 </option>
-
                             </select>
-
                         </div>
-
-
                         <div class="form-group">
-
                             <label>
                                 شفاخانه / مرکز صحی محل کار
                             </label>
-
-                            <input
-                                type="text"
-                                name="hospital"
-                                placeholder="نام شفاخانه یا مرکز صحی"
-                            >
-
+                            <input type="text" name="hospital" placeholder="نام شفاخانه یا مرکز صحی">
                         </div>
-
                     </div>
 
-
-
                     <!-- Academic Information -->
-
                     <h2 class="form-section-title">
                         سوابق علمی
                     </h2>
-
-
                     <div class="form-grid">
-
-
                         <div class="form-group">
-
                             <label>
                                 تعداد مقالات علمی
                             </label>
-
-                            <input
-                                type="number"
-                                name="articles"
-                                min="0"
-                                placeholder="مثلاً 5"
-                            >
-
+                            <input type="number" name="articles" min="0" placeholder="مثلاً 5">
                         </div>
-
-
                         <div class="form-group">
-
                             <label>
                                 دست‌آوردها و افتخارات
                             </label>
-
-                            <input
-                                type="text"
-                                name="achievements"
-                                placeholder="دست‌آوردهای خود را وارد کنید"
-                            >
-
+                            <input type="text" name="achievements" placeholder="دست‌آوردهای خود را وارد کنید">
                         </div>
-
-
                         <div class="form-group">
-
                             <label>
                                 سایر سوابق علمی
                             </label>
-
-                            <input
-                                type="text"
-                                name="academic_records"
-                                placeholder="سایر سوابق علمی"
-                            >
-
+                            <input type="text" name="academic_records" placeholder="سایر سوابق علمی">
                         </div>
-
                     </div>
-
-
-
                     <!-- Description -->
-
                     <div class="form-group">
-
                         <label>
                             توضیحات بیشتر درباره سوابق علمی
                         </label>
-
                         <textarea
-                            name="academic_description"
-                            placeholder="مقالات، تحقیقات، کنفرانس‌ها و سایر سوابق علمی خود را بنویسید..."
-                        ></textarea>
+                            name="academic_description" placeholder="مقالات، تحقیقات، کنفرانس‌ها و سایر سوابق علمی خود را بنویسید...">
+                        </textarea>
 
                     </div>
-
-
-
                     <!-- Documents -->
-
                     <h2 class="form-section-title">
                         اسناد تحصیلی و علمی
                     </h2>
-
-
                     <div class="form-grid">
-
-
                         <div class="upload-box">
-
                             <span class="upload-text">
                                 تصویر تذکره / پاسپورت
                             </span>
-
-                            <input
-                                type="file"
-                                name="identity_document"
-                                accept=".jpg,.jpeg,.png,.pdf"
-                            >
-
+                            <input type="file" name="identity_document" accept=".jpg,.jpeg,.png,.pdf">
                         </div>
-
-
                         <div class="upload-box">
-
                             <span class="upload-text">
                                 سند تحصیلی
                             </span>
-
-                            <input
-                                type="file"
-                                name="education_document"
-                                accept=".jpg,.jpeg,.png,.pdf"
-                            >
-
+                            <input type="file" name="education_document" accept=".jpg,.jpeg,.png,.pdf">
                         </div>
-
-
                         <div class="upload-box">
-
                             <span class="upload-text">
                                 سایر اسناد
                             </span>
-
-                            <input
-                                type="file"
-                                name="other_documents"
-                                accept=".jpg,.jpeg,.png,.pdf"
-                                multiple
-                            >
-
+                            <input type="file" name="other_documents" accept=".jpg,.jpeg,.png,.pdf" multiple>
                         </div>
-
-
                     </div>
-
-
-
                     <!-- Agreement -->
-
                     <div class="agreement">
-
-                        <input
-                            type="checkbox"
-                            id="agreement"
-                            required
-                        >
-
+                        <input type="checkbox" id="agreement" required>
                         <label for="agreement">
-
                             تأیید می‌کنم که تمام معلومات وارد شده
                             صحیح بوده و مسئولیت صحت آن را بر عهده
                             می‌گیرم.
-
-                            <span class="required">*</span>
-
                         </label>
-
                     </div>
 
-
-
                     <!-- Buttons -->
-
                     <div class="buttons">
-
-                        <button
-                            type="submit"
-                            class="submit-btn"
-                        >
+                        <button type="submit" class="submit-btn">
                             ثبت نام داکتر
                         </button>
 
-
-                        <button
-                            type="reset"
-                            class="reset-btn"
-                        >
+                        <button type="reset" class="reset-btn">
                             پاک کردن
                         </button>
-
                     </div>
-
-
                 </form>
-
             </div>
-
-
         </div>
-
     </main>
-
-
-
     <!-- 
          FOOTER
     = -->
-
     <footer>
-
         <p>
             © 2026 همراه داکتر | تمام حقوق محفوظ است
         </p>
-
     </footer>
-
-
 </body>
-
 </html>
