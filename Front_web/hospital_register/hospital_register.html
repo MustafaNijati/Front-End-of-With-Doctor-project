@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام شفاخانه | همراه داکتر</title>
+    <link rel="stylesheet" href="hospital_register_style.css">
+</head>
+
+<body>
+    <!--  HEADER  -->
+    <header>
+        <div class="logo">
+            <img src="/logo/logo.png" alt="لوگوی همراه داکتر">
+            <h2>همراه داکتر</h2>
+        </div>
+
+        <nav>
+            <a href="/Front_web/index.html">صفحه عمومی</a>
+            <a href="#services"> خدمات</a>
+            
+            <a href="#"> شبکه های اجتماعی</a>
+    
+                        <!-- <a href="">فیسبوک</a>
+                        <a href="">یوتیوب</a>
+                        <a href="">واتساب</a>
+                 -->
+            <a href="#about"> درباره ما</a>
+        </nav>
+
+    </header>
+
+
+    <!--  MAIN  -->
+
+    <main>
+
+        <div class="page-title">
+
+            <h1>ثبت نام شفاخانه</h1>
+
+            <p>
+                معلومات شفاخانه را برای ایجاد پروفایل وارد کنید.
+            </p>
+
+        </div>
+
+        <div class="register-container">
+            <!--  IMAGE  -->
+            <div class="image-section">
+                <img
+                    src="/pictures/hospital.png"
+                    alt="تصویر شفاخانه">
+                <div class="image-text">
+                    <h2>همراه داکتر</h2>
+                    <p>
+                        شفاخانه خود را در سیستم همراه داکتر ثبت کنید.
+                    </p>
+                </div>
+            </div>
+            <!--  FORM  -->
+            <div class="form-section">
+                <form action="hospital-register.php" method="POST" enctype="multipart/form-data">
+                    <!-- اطلاعات عمومی شفاخانه -->
+                    <fieldset>
+                        <legend>اطلاعات عمومی شفاخانه</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="hospital_name">
+                                    نام شفاخانه
+                                </label>
+                                <input
+                                    type="text" id="hospital_name"
+                                    name="hospital_name"
+                                    placeholder="نام شفاخانه را وارد کنید" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hospital_type">
+                                    نوع شفاخانه
+                                </label>
+                                <select id="hospital_type" name="hospital_type" required>
+                                    <option value="">
+                                        انتخاب کنید
+                                    </option>
+                                    <option value="دولتی">
+                                        دولتی
+                                    </option>
+                                    <option value="خصوصی">
+                                        خصوصی
+                                    </option>
+                                    <option value="تخصصی">
+                                        تخصصی
+                                    </option>
+                                    <option value="آموزشی">
+                                        آموزشی
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="founded_year">
+                                    سال تأسیس
+                                </label>
+                                <input type="number" id="founded_year"
+                                    name="founded_year" placeholder="مثلاً 1390">
+                            </div>
+                            <div class="form-group">
+
+                                <label for="beds">
+                                    تعداد بسترها
+                                </label>
+                                <input type="number" id="beds" name="beds" placeholder="مثلاً 100">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- معلومات تماس -->
+                    <fieldset>
+                        <legend>معلومات تماس</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="phone">
+                                    شماره تماس
+                                </label>
+                                <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    ایمیل
+                                </label>
+                                <input type="email" id="email"
+                                    name="email" placeholder="example@gmail.com">
+
+                            </div>
+                            <div class="form-group full">
+                                <label for="website">
+                                    وب‌سایت
+                                </label>
+                                <input type="url" id="website"
+                                    name="website" placeholder="https://example.com">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- موقعیت -->
+                    <fieldset>
+                        <legend>موقعیت شفاخانه</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="province">
+                                    ولایت
+                                </label>
+                                <select id="province" name="province_id" required>
+                                    <option value="">
+                                        انتخاب ولایت
+                                    </option>
+                                    <option value="1">
+                                        کابل
+                                    </option>
+                                    <option value="2">
+                                        هرات
+                                    </option>
+                                    <option value="3">
+                                        بلخ
+                                    </option>
+                                    <option value="4">
+                                        قندهار
+                                    </option>
+                                    <option value="5">
+                                        ننگرهار
+                                    </option>
+                                    <option value="6">
+                                        بدخشان
+                                    </option>
+                                    <option value="7">
+                                        کندز
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="district">
+                                    ولسوالی
+                                </label>
+                                <select id="district" name="district_id">
+                                    <option value="">
+                                        ابتدا ولایت را انتخاب کنید
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label for="address">
+                                    آدرس کامل
+                                </label>
+                                <textarea id="address" name="address" rows="3"
+                                    placeholder="آدرس دقیق شفاخانه را وارد کنید" required>
+                                </textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- خدمات -->
+                    <fieldset>
+                        <legend>خدمات شفاخانه</legend>
+                        <div class="checkbox-grid">
+                            <label>
+                                <input type="checkbox" name="services[]" value="1">
+                                بخش عاجل
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="2">
+                                قلب و عروق
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="3">
+                                جراحی
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="4">
+                                اطفال
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="5">
+                                نسایی ولادی
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="6">
+                                داخله
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="7">
+                                چشم
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="8">
+                                گوش، حلق و بینی
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="9">
+                                ارتوپیدی
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="10">
+                                آزمایشگاه
+                            </label>
+                            <label>
+                                <input type="checkbox"  name="services[]" value="11">
+                                رادیولوژی
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services[]" value="12">
+                                سونوگرافی
+                            </label>
+                        </div>
+                        <div class="emergency">
+                            <label>
+                                <input type="checkbox" name="emergency_available" value="1">
+                                این شفاخانه دارای بخش خدمات عاجل 24 ساعته است.
+                            </label>
+                        </div>
+                    </fieldset>
+                    <!-- معلومات بیشتر -->
+                    <fieldset>
+                        <legend>معلومات بیشتر</legend>
+                        <div class="form-group">
+                            <label for="description">
+                                درباره شفاخانه
+                            </label>
+                            <textarea id="description" name="description" rows="6"
+                                placeholder="معلوماتی درباره شفاخانه، خدمات و امکانات آن بنویسید">
+                            </textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="hospital_license">
+                                جواز شفاخانه
+                            </label>
+                            <input type="file" id="hospital_license" 
+                                name="hospital_license">
+                        </div>
+                    </fieldset>
+                    <!-- تصویر شفاخانه -->
+                    <fieldset>
+                        <legend>تصویر شفاخانه</legend>
+                        <div class="form-group">
+                            <label for="hospital_image">
+                                تصویر شفاخانه
+                            </label>
+                            <input type="file" id="hospital_image" 
+                                name="hospital_image" accept="image">
+                        </div>
+                    </fieldset>
+                    <!-- قوانین -->
+                    <div class="agreement">
+                        <label>
+                            <input type="checkbox" name="agreement" required>
+                            معلومات وارد شده صحیح است و مسئولیت آن را می‌پذیرم.
+                        </label>
+                    </div>
+                    <!-- BUTTON -->
+                    <button type="submit" class="submit-btn">
+                        ثبت نام شفاخانه
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--  FOOTER  -->
+    <footer>
+        <p>
+            © 2026 همراه داکتر | تمام حقوق محفوظ است.
+        </p>
+    </footer>
+    <!--  JAVASCRIPT  -->
+
+    <script>
+
+       /* ولایت → ولسوالی
+        */
+        const districts = {
+
+            "1": [
+                ["1", "مرکز کابل"],
+                ["2", "بگرامی"],
+                ["3", "پغمان"],
+                ["4", "ده سبز"],
+                ["5", "استالف"]
+            ],
+
+            "2": [
+                ["6", "مرکز هرات"],
+                ["7", "انجیل"],
+                ["8", "گذره"],
+                ["9", "کشک"]
+            ],
+
+            "3": [
+                ["10", "مزار شریف"],
+                ["11", "دهدادی"],
+                ["12", "بلخ"]
+            ],
+
+            "4": [
+                ["13", "مرکز قندهار"],
+                ["14", "ارغنداب"],
+                ["15", "پنجوایی"]
+            ],
+
+            "5": [
+                ["16", "جلال آباد"],
+                ["17", "سرخ رود"],
+                ["18", "بهسود"]
+            ]
+
+        };
+
+
+        const province =
+            document.getElementById("province");
+
+        const district =
+            document.getElementById("district");
+
+
+        province.addEventListener("change", function () {
+
+            const provinceId = this.value;
+
+
+            district.innerHTML =
+                '<option value="">انتخاب ولسوالی</option>';
+
+
+            if (districts[provinceId]) {
+
+                districts[provinceId].forEach(function (item) {
+
+                    const option =
+                        document.createElement("option");
+
+                    option.value = item[0];
+
+                    option.textContent = item[1];
+
+                    district.appendChild(option);
+
+                });
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
